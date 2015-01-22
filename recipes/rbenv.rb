@@ -28,6 +28,11 @@ template "/etc/profile.d/rbenv.sh" do
   variables rbenv_path: rbenv_path
 end
 
+execute "chmod rbenv.sh" do
+  command "chmod 755 /etc/profile.d/rbenv.sh"
+  only_if File.exists? "/etc/profile.d/rbenv.sh"
+end
+
 directory plugin_path do
   owner node["rbenv"]["user"]
   group node["rbenv"]["group"] || node["rbenv"]["user"]
