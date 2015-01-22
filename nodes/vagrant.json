@@ -18,5 +18,8 @@
       {"name": "rbenv-default-gems", "repository": "https://github.com/sstephenson/rbenv-default-gems.git"},
       {"name": "rbenv-gem-rehash", "repository": "https://github.com/sstephenson/rbenv-gem-rehash.git"}
     ]
+  },
+  "mysql": {
+    "server_root_password": "mysql"
   }
 }
