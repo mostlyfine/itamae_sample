@@ -4,6 +4,7 @@ execute "install groonga repository" do
 end
 
 package "mecab"
+package "mecab-devel"
 package "mecab-ipadic"
 
 
